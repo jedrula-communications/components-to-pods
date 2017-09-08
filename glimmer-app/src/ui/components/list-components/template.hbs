@@ -1,0 +1,9 @@
+<div>
+<button onclick={{action getFiles}}>get files</button>
+components list {{componentFiles.length}}
+  <ul>
+    {{#each componentFiles key="@index" as |file|}}
+      <li>file: {{file}} <button onclick={{action convertToPod file}}>convert</button></li>
+    {{/each}}
+  </ul>
+</div>
